@@ -25,7 +25,7 @@ func main() {
 	})
 
 	log.Printf("listening on %s\n", addr)
-	log.Fatalf(fmt.Sprintln(http.ListenAndServe(addr, mux)))
+	log.Fatal(http.ListenAndServe(addr, mux))
 }
 
 type Resp struct {
