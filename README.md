@@ -1,5 +1,7 @@
 # Hello API
 
+[![CI Checks](https://github.com/SeSc838/hello-api/actions/workflows/pipline.yml/badge.svg)](https://github.com/SeSc838/hello-api/actions/workflows/pipline.yml)
+
 ## Dependencies
 
 - Go version 1.25
