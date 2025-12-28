@@ -16,3 +16,12 @@ install-go:
 init-go:
 	echo 'export PATH=$$PATH:/usr/local/go/bin' >> $${HOME}/.bashrc
 	echo 'export PATH=$$PATH:$${HOME}/go/bin' >> $${HOME}/.bashrc
+
+test:
+	go test ./... -coverprofile=coverage.out
+
+coverage:
+	go tool cover -func coverage.out | grep "total:" | awk '{print ((int($$3) > 80) != 1) }'
+
+report:
+	go tool cover -html=coverage.out -o cover.html
