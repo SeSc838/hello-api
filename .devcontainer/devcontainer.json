@@ -22,7 +22,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.makefile-tools",
-				"golang.go"
+				"golang.go",
+				"redhat.vscode-yaml"
 			]
 		}
 	}
