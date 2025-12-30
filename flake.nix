@@ -13,9 +13,7 @@
           go
           golangci-lint-langserver
           gopls
-          go-task
           gotools
-          go-tools
         ];
       };
     }
